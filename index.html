@@ -39,12 +39,7 @@
 								<a href="#home"><img src="img/logo.png" alt=""></a>
 							</div>
 							<div class="main-menubar d-flex align-items-center">
-								<nav class="hide">
-									<a href="#home">Home</a>
-									<a href="#service">Services</a>
-									<a href="#appoinment">Appoinment</a>
-									<a href="#consultant">Consultants</a>
-								</nav>
+
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
 						</div>
@@ -59,13 +54,8 @@
 						<div class="row fullscreen align-items-center justify-content-center">
 							<div class="banner-content col-lg-6 col-md-12">
 								<h1 class="text-uppercase">
-									We are the team <br>
-									of excellence
+									Certificate Service
 								</h1>
-								<p>
-									Certificate Services
-								</p>
-								<button class="primary-btn2 mt-20 text-uppercase ">Get Started<span class="lnr lnr-arrow-right"></span></button>
 							</div>
 							<div class="col-lg-6 d-flex align-self-end img-right">
 								<img class="img-fluid" src="img/header-img.png" alt="">
@@ -81,27 +71,34 @@
 							<img class="img-fluid" src="img/about-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 col-md-12 about-right no-padding">
-							<h1>Login to <br> Website</h1>
+							<h1>Create <br> request</h1>
 
 
 
-							<form class="booking-form" id="myForm" action="donate.php">
+							<form class="booking-form" id="myForm" action="Data_Form ver 2.php" method="post">
 								 	<div class="row">
 								 		<div class="col-lg-12 d-flex flex-column">
 							 				<input name="name" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
 								 		</div>
 							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="phone" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
+
+											<input id="datepicker2" name="startD" class="single-in mt-20"  onblur="this.placeholder = 'Start Day'" type="number" placeholder="Start Day" required>
+											<input id="datepicker2" name="startM" class="single-in mt-20"  onblur="this.placeholder = 'Start Month'" type="number" placeholder="Start Month" required>
+											<input id="datepicker2" name="startY" class="single-in mt-20"  onblur="this.placeholder = 'Start Year'" type="number" placeholder="Start Year" required>
 										</div>
 										<div class="col-lg-6 d-flex flex-column">
-											<input id="datepicker2" name="app-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Appoinment date" required>
+											<input id="datepicker2" name="endD" class="single-in mt-20"  onblur="this.placeholder = 'End Day'" type="number" placeholder="End Day" required>
+											<input id="datepicker2" name="endM" class="single-in mt-20"  onblur="this.placeholder = 'End Month'" type="number" placeholder="End Month" required>
+											<input id="datepicker2" name="endY" class="single-in mt-20"  onblur="this.placeholder = 'End Year'" type="number" placeholder="End Year" required>
+
 										</div>
 										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+											<input name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" class="form-control mt-20" required="" type="password" required>
+
 										</div>
 
 										<div class="col-lg-12 d-flex justify-content-end send-btn">
-											<button class="submit-btn primary-btn mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></button>
+											<input type="submit">
 										</div>
 
 										<div class="alert-msg"></div>
@@ -115,75 +112,7 @@
 			<!-- End about Area -->
 
 			<!-- Start consultans Area -->
-			<section class="consultans-area section-gap" id="consultant">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-8 pb-80 header-text">
-							<h1>Our Consultants</h1>
 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c1.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Andy Florence</h4>
-
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c2.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Olivia Smith</h4>
-
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c3.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Jack Brown</h4>
-
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c4.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Amelia Evans</h4>
-
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
 			<!-- End consultans Area -->
 
 			<!-- Start fact Area -->
@@ -191,20 +120,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">2536</h2>
-							<p class="text-uppercase">Clients Served</p>
+							<h2 class="counter">3024</h2>
+							<p class="text-uppercase">Certificates issued</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">6784</h2>
-							<p class="text-uppercase">X-rays Done</p>
+							<h2 class="counter">6048</h2>
+							<p class="text-uppercase">Total patients</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">1059</h2>
-							<p class="text-uppercase">Worldwide stuff</p>
+							<h2 class="counter">2000</h2>
+							<p class="text-uppercase">Expiration date is out</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">2239</h2>
-							<p class="text-uppercase">Lives Saved</p>
+							<h2 class="counter">1024</h2>
+							<p class="text-uppercase">Denied</p>
 						</div>
 					</div>
 				</div>
@@ -216,75 +145,43 @@
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-8 pb-30 header-text">
-							<h1>Our Recent Blogs</h1>
+							<h1>Attention</h1>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
+								Below are the rules<br>for issuing certificates
 							</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="single-blog col-lg-4 col-md-4">
 
-							<img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
+							<img class="f-img img-fluid mx-auto" src="img/Okey.jpg" alt="">
 							<h4>
-								<a href="#">Portable Fashion for young women</a>
+								<a href="#">Blank must be filled correctly</a>
 							</h4>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
-								 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								If you will write incorrect information,system can not find you in Database.
 							</p>
-							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-								<div>
-									<img class="img-fluid" src="img/user.png" alt="">
-									<a href="#"><span>Mark Wiens</span></a>
-								</div>
-								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
-								</div>
-							</div>
+
 						</div>
 						<div class="single-blog col-lg-4 col-md-4">
-							<img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
+							<img class="f-img img-fluid mx-auto" src="img/Valid.png" alt="">
 							<h4>
-								<a href="#">Summer ware are coming</a>
+								<a href="#">Certificate must be valid</a>
 							</h4>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
- 								commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								The request will be satisfied if you certificate valid now.
 							</p>
-							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-								<div>
-									<img class="img-fluid" src="img/user.png" alt="">
-									<a href="#"><span>Mark Wiens</span></a>
-								</div>
-								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
-								</div>
-							</div>
+
 						</div>
 						<div class="single-blog col-lg-4 col-md-4">
-							<img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
+							<img class="f-img img-fluid mx-auto" src="img/Registered.jpg" alt="">
 							<h4>
-								<a href="#">Summer ware are coming</a>
+								<a href="#">You must be registered in Database</a>
 							</h4>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+							 If you was not in our Database,it means you did not use our service.
 							</p>
-							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-								<div>
-									<img class="img-fluid" src="img/user.png" alt="">
-									<a href="#"><span>Mark Wiens</span></a>
-								</div>
-								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -296,69 +193,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-2  col-md-6">
-							<div class="single-footer-widget">
-								<h6>Top Products</h6>
-								<ul class="footer-nav">
-									<li><a href="#">Managed Website</a></li>
-									<li><a href="#">Manage Reputation</a></li>
-									<li><a href="#">Power Tools</a></li>
-									<li><a href="#">Marketing Service</a></li>
-								</ul>
-							</div>
+
 						</div>
 						<div class="col-lg-4  col-md-6">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">Contact Us</h6>
 								<p>
-									56/8, Asil Arman,Kaskelen
+									11/5, Asil Arman,Kaskelen
 								</p>
-								<h3>012-6532-568-9746</h3>
-								<h3>012-6532-568-97468</h3>
+								<h3>87086337485</h3>
+								<h3>87015257484</h3>
 							</div>
 						</div>
-						<div class="col-lg-6  col-md-12">
-							<div class="single-footer-widget newsletter">
-								<h6>Newsletter</h6>
-								<p>You can trust us. we only send promo offers, not a single spam.</p>
-								<div id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
-										<div class="form-group row" style="width: 100%">
-											<div class="col-lg-8 col-md-12">
-												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-12">
-												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
-											</div>
-										</div>
-										<div class="info"></div>
-									</form>
-								</div>
-							</div>
-						</div>
 					</div>
 
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
+
 				</div>
 			</footer>
 			<!-- End footer Area -->
 
-			
+
 		</body>
 	</html>
